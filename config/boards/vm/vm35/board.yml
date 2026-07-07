@@ -1,0 +1,6 @@
+board:
+  name: vm35
+  full_name: VM35 macropad / split half
+  vendor: vm
+  socs:
+    - name: nrf52840

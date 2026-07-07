@@ -1,6 +1,6 @@
 file_format: "1"
 id: vm35
-name: VM35
+name: VM35 macropad / split half
 type: board
 arch: arm
 features:
@@ -8,7 +8,3 @@ features:
 outputs:
   - usb
   - ble
-url: https://example.com/vm35 # TODO
-siblings:
-  - vm35_left
-  - vm35_right

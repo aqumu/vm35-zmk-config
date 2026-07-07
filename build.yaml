@@ -2,6 +2,5 @@
 include:
   # Standalone macropad
   - board: vm35
-  # Split keyboard (two VM35 PCBs over BLE)
-  - board: vm35_left
-  - board: vm35_right
+  # Split targets (vm35_left / vm35_right) are being re-added as HWMv2
+  # boards after the standalone build is confirmed working.

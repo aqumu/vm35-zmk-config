@@ -1,9 +1,9 @@
 /*
- * VM35 — custom macropad / split half
- * MCU: nRF52840 on EByte E73-2G4M08S1C module
- * Shared devicetree for all variants (standalone, left, right).
+ * VM35 — custom macropad (standalone) built on an nRF52840
+ * (EByte E73-2G4M08S1C module).
  */
 
+/dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 
@@ -31,8 +31,7 @@
 	/*
 	 * External-power gate: P-FET (AO3407) gate on P1.09, held off by a 2M
 	 * pull-up, so driving the pin low enables EXT_VCC -> ACTIVE_LOW.
-	 * Polarity is inferred from the schematic; verify if peripherals stay
-	 * unpowered (or run `&kp C_...` power test) once flashed.
+	 * Polarity is inferred from the schematic; verify on hardware.
 	 */
 	extpower {
 		compatible = "zmk,ext-power-generic";
@@ -118,13 +117,11 @@
 
 &usbd {
 	status = "okay";
-	cdc_acm_uart: cdc_acm_uart {
-		compatible = "zephyr,cdc-acm-uart";
-	};
 };
 
 &flash0 {
-	/* Partition layout for the Adafruit nRF52 (UF2) bootloader,
+	/*
+	 * Partition layout for the Adafruit nRF52 (UF2) bootloader,
 	 * same as nice!nano. Application starts at 0x26000.
 	 */
 	partitions {
