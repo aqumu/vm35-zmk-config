@@ -14,7 +14,7 @@ config/
   vm35_left.keymap    # split central, 70-key draft
   vm35_right.keymap   # split peripheral stub (unused bindings)
   vm35_{left,right}.conf
-boards/arm/vm35/      # custom board definition (nRF52840 / E73 module)
+  boards/arm/vm35/    # custom board definition (nRF52840 / E73 module)
 build.yaml            # build matrix: vm35, vm35_left, vm35_right
 .github/workflows/    # CI that compiles firmware on every push
 ```
