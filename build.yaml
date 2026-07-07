@@ -2,5 +2,9 @@
 include:
   # Standalone macropad
   - board: vm35
+  # Settings-reset image: flash this FIRST to wipe stale BLE bonds /
+  # endpoint state left over from previous firmware, then flash vm35.
+  - board: vm35
+    shield: settings_reset
   # Split targets (vm35_left / vm35_right) are being re-added as HWMv2
   # boards after the standalone build is confirmed working.
