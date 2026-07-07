@@ -1,0 +1,14 @@
+file_format: "1"
+id: vm35
+name: VM35
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+url: https://example.com/vm35 # TODO
+siblings:
+  - vm35_left
+  - vm35_right

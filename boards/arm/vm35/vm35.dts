@@ -1,0 +1,4 @@
+/dts-v1/;
+#include "vm35.dtsi"
+
+/* Standalone macropad — full matrix on one board, no split. */

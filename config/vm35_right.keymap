@@ -1,0 +1,34 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/*
+ * VM35 split — right (peripheral). Bindings here are never used: the
+ * left/central owns the keymap and generates all HID. This stub only
+ * exists so the peripheral target builds. Keep it 70 transparent keys.
+ */
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+			bindings = <
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans
+			>;
+		};
+	};
+};

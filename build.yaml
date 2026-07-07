@@ -1,0 +1,7 @@
+# Build matrix for the GitHub Actions user-config workflow.
+include:
+  # Standalone macropad
+  - board: vm35
+  # Split keyboard (two VM35 PCBs over BLE)
+  - board: vm35_left
+  - board: vm35_right

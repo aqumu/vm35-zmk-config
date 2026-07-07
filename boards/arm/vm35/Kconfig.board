@@ -1,0 +1,11 @@
+config BOARD_VM35
+	bool "VM35 (standalone macropad)"
+	depends on SOC_NRF52840_QIAA
+
+config BOARD_VM35_LEFT
+	bool "VM35 left half (split central)"
+	depends on SOC_NRF52840_QIAA
+
+config BOARD_VM35_RIGHT
+	bool "VM35 right half (split peripheral)"
+	depends on SOC_NRF52840_QIAA

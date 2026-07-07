@@ -1,0 +1,14 @@
+# ZMK / west build output
+build/
+.west/
+zmk/
+zephyr/
+modules/
+*.uf2
+*.hex
+*.bin
+
+# Editor / OS cruft
+.DS_Store
+Thumbs.db
+*.swp
