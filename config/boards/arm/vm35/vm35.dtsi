@@ -34,9 +34,10 @@
 	 * Polarity is inferred from the schematic; verify if peripherals stay
 	 * unpowered (or run `&kp C_...` power test) once flashed.
 	 */
-	ext_power: extpower {
+	extpower {
 		compatible = "zmk,ext-power-generic";
 		control-gpios = <&gpio1 9 GPIO_ACTIVE_LOW>;
+		label = "EXT_POWER";
 	};
 
 	/*
