@@ -34,7 +34,7 @@
 			display-name = "Fn";
 			bindings = <
 				&bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3
-				&out OUT_USB  &out OUT_BLE   &out OUT_TOG   &trans          &trans
+				&out OUT_USB  &out OUT_BLE   &out OUT_TOG   &trans          &studio_unlock
 				&trans        &trans         &trans         &trans          &trans
 				&trans        &trans         &trans         &trans          &trans
 				&trans        &trans         &trans         &trans          &trans

@@ -1,7 +1,8 @@
 # Build matrix for the GitHub Actions user-config workflow.
 include:
-  # Standalone macropad
+  # Standalone macropad (with ZMK Studio live-editing support)
   - board: vm35
+    snippet: studio-rpc-usb-uart
   # Settings-reset image: flash this FIRST to wipe stale BLE bonds /
   # endpoint state left over from previous firmware, then flash vm35.
   - board: vm35
