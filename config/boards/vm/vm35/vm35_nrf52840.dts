@@ -17,7 +17,8 @@
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zmk,kscan = &kscan0;
-		zmk,matrix-transform = &default_transform;
+		/* Transform is provided by the zmk,physical-layout below (required
+		 * for ZMK Studio) — do not also pin it here via zmk,matrix-transform. */
 		zmk,battery = &vbatt;
 	};
 
