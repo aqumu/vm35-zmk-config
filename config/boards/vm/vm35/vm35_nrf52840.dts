@@ -170,7 +170,9 @@
 	status = "okay";
 };
 
-&usbd {
+/* Label the USB device controller zephyr_udc0 so the ZMK Studio
+ * (studio-rpc-usb-uart) snippet can attach its CDC-ACM RPC endpoint. */
+zephyr_udc0: &usbd {
 	status = "okay";
 };
 
